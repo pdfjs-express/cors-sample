@@ -1,0 +1,23 @@
+{
+  "name": "pdfjs-express-cors-sample",
+  "version": "1.0.0",
+  "description": "A sample showing how to use Express when loaded from another domain",
+  "main": "src/index.js",
+  "repository": "git@github.com:pdfjs-express/cors-sample.git",
+  "author": "Logan Bittner",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@pdftron/pdfjs-express": "^8.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "parcel-bundler": "1.12.3"
+  },
+  "scripts": {
+    "start:client": "node scripts/copy.js && parcel src/index.html",
+    "start:cdn": "node cdn/index.js"
+  }
+}
